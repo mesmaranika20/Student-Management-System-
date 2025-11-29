@@ -8,3 +8,4 @@ def db_get_all():
     rows = conn.execute("SELECT * FROM students ORDER BY id DESC").fetchall()
     conn.close()
     return [dict(r) for r in rows]
+
