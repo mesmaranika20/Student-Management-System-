@@ -1,4 +1,4 @@
-// import { initStudentController } from "../controllers/studentController.js";
+ import { initStudentController } from "../controllers/studentController.js";
 
 // Load a view into #app container
 async function LoadView(path) {
@@ -15,7 +15,7 @@ export async function router() {
    
     }
     else if (path === "/students") {
-     await loadView("/frontend/pages/students.html");
+     await LoadView("/frontend/pages/students.html");
      initStudentController();
     }
 
